@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 6
+   Case Problem 1
+
+   Tables Style Sheet
+   Author: Chad Williams
+   Date:   12.11.18
+
+   Filename:         mi_tables.css
+
+*/
+
+/* Table Styles */
+/* Step 9, creates background gradient going to black and bottom border*/
+table {
+    background: linear-gradient(rgb(190, 215, 255), black);
+    border-bottom: 5px solid gray;
+}
+
+/* Step 10, edits line height of font, border and padding  */
+th,
+td {
+    line-height: 1.4em;
+    border: 3px solid gray;
+    padding: 8px;
+}
+
+/* Step 11, background of table headings is black and font color light blue */
+th {
+    background-color: black;
+    color: rgb(130, 210, 255);
+}
+
+/* Step 12 changes font size, aligns text center and white text color */
+td {
+    color: white;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+
+
+
+/* Column Styles */
+/* Step 13, width of first column is 24% */
+col#firstcol {
+    width: 24%;
+}
+
+/* Step 14 width of Datacolumns now 19% */
+col.datacols {
+    width: 19%;
+}
+
+/* Table Header Styles */
+/* Step 15 changes table row height in table head */
+thead tr {
+    height: 60px;
+}
+
+/* Table headings first of type now bigger font  */
+thead th:first-of-type {
+    font-size: 2em;
+}
+
+/* Any tableheadings not first of type in table head background color disapears and font color is black */
+thead th:not(:first-of-type) {
+    background-color: transparent;
+    color: black;
+}
+
+#prices {
+    background-color: transparent;
+    color: black;
+}
